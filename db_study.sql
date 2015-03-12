@@ -943,3 +943,40 @@ LOCK TABLES `todo` WRITE;
 INSERT INTO `todo` VALUES (1,'#mysql #log #activate','have to activatetail -f /var/log/mysql/mysql.log','done','2015-02-15 13:43:48'),(2,'#mysql #activate #load_data#local#infile','how to activate the logging of mysqlmhttp://toshi-sql-mysql.blogspot.com/2013/05/sqlmysqlerror-29-hy000-file-not-found.html\n\ni dont_have apparmor, do i have to install it ?','todo','2015-01-14 16:25:58'),(3,'#mysql #trigger #money','\ncreate trigger after_insert_mon_io after insert on mon_i_o for each row begin   select amount into @last_am_mon_a from mon_a where id_m_a=ma\nx(id_m_a);      if new.act = \'o\' then           select @last_am_mon_a - new.amount into @new_am from mon_i_o;           insert into mon_a (a\nmount, cmt) values (@new_am, new.cmt);          elseif new.act = \'i\' then                       select @last_am_mon_a + new.amount into @new\n_am from mon_i_o;                       insert into mon_a (amount, cmt) values (@new_am, new.cmt);      else            select \'didn_t enter\ned nor took money out\';         end if; end\n','done','2015-02-02 14:45:12'),(4,'-homework -offset #mysql','\nselect max(id_n_t) into @a from notes_tech; select * from notes_tech limit 10 offset @a;\n','todo','2015-02-02 14:47:13'),(5,'to ask','dans git, quelle est la difference entre validateur et auteur','todo','2015-02-02 17:01:37'),(6,NULL,'i_ll be back on fb soon','todo','2015-02-06 21:19:06'),(7,'mysql status','why #mysql status\" doesn_t work\nu have todo \"service mysql status\" but not \"mysql status\"','todo','2015-02-15 13:43:48'),(8,'to ask to amit','\nwhat is duplex_distance?\n it is the distance between the uplink and downlink frequencies.\n    \'\n    The duplex distance is 80 MHz in gsm\n        or downlink freq is 890 - 915 MHz\n            uplink freq is 935 - 960 MHz\n\n\n\n\n\nmsrn is exactly the same as the msisdn but \n    msrn is temporary ?\n\n\n\nin the bc,\n    what means exactly: \n        bc generates the bill according to the template of pulse rates\n\n\n\nis the first schema in (#848) exact ?\n    in the call_cost !\n\n\n','todo','2015-02-26 03:49:09'),(9,'about telec','\ndcn\noob\nqos\n','todo','2015-02-27 12:45:55'),(10,'telec','\nI have to do more research about:\n    spectrum-carriers-channels\n    frequency-hopping\n    trc','todo','2015-02-27 15:13:42'),(11,NULL,'adsf','todo','2015-03-09 20:36:57'),(12,NULL,'\n\n+-----+--------+--------+----------------------+\n| tab1|  tab2  |  tab3  |                      |\n+-----+--------+--------+----------------------+\n|                                              |\n|                                              |\n|                                              |\n|                                              |\n|                                              |\n|                                              |\n|                                              |\n+----------------------------------------------+\n\n','todo','2015-03-09 20:38:45'),(13,'#github -prolog','\ntokony apina repo vaovao ani am repo am github_ko\n    momba ny dev prolog\n','todo','2015-03-12 04:43:15');
 /*!40000 ALTER TABLE `todo` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `vid_stu`
+--
+
+DROP TABLE IF EXISTS `vid_stu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `vid_stu` (
+  `id_vid` int(5) NOT NULL AUTO_INCREMENT,
+  `link_file` varchar(200) NOT NULL DEFAULT 'not filed',
+  `seen_till_end` tinyint(1) DEFAULT NULL,
+  `length` time DEFAULT NULL,
+  PRIMARY KEY (`id_vid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `vid_stu`
+--
+
+LOCK TABLES `vid_stu` WRITE;
+/*!40000 ALTER TABLE `vid_stu` DISABLE KEYS */;
+INSERT INTO `vid_stu` VALUES (1,'/media/hdd_sda7/vid/htb/netw/Packet Tracer Intro to Routing - 1, Cisco CCNA-1ON1PNWRryE.webm',0,'00:10:35');
+/*!40000 ALTER TABLE `vid_stu` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-03-12 11:46:00
