@@ -811,7 +811,7 @@ CREATE TABLE `quotes` (
   `txt` text,
   `about` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_q`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -820,7 +820,7 @@ CREATE TABLE `quotes` (
 
 LOCK TABLES `quotes` WRITE;
 /*!40000 ALTER TABLE `quotes` DISABLE KEYS */;
-INSERT INTO `quotes` VALUES (1,'all revolution starts in one person\'s mind','i'),(2,'never let your fear decide your fate','i'),(3,'certain personne ne sont pas si mauvais, c qu\'ils sont nes dans une contexte difficile ',NULL),(4,'maka lesona ny omaly, hanatsara ny anio, hampandroso ny ampitso','ny rado rafalimanana'),(5,'marines corps motto is do or die',NULL),(6,'do exercices (study, sports, ...) or die masturbating',NULL),(7,'if u wait until u do everything for everybody\n	instead of doing sth for somebody, u will end up doing nothing for nobody','ock.tv'),(8,'God, help me to get enough energy to stop masturbating',NULL),(9,'outer beauty is temporary, inner beauty lasts forever',NULL),(10,'loyalty',NULL),(11,'ma mort fera de moi une legende, mes actes passeront a l_histoire','from the immortals'),(12,'Unix est le système d\'exploitation d\'Internet','hack'),(13,'i must love math','math');
+INSERT INTO `quotes` VALUES (1,'all revolution starts in one person\'s mind','i'),(2,'never let your fear decide your fate','i'),(3,'certain personne ne sont pas si mauvais, c qu\'ils sont nes dans une contexte difficile ',NULL),(4,'maka lesona ny omaly, hanatsara ny anio, hampandroso ny ampitso','ny rado rafalimanana'),(5,'marines corps motto is do or die',NULL),(6,'do exercices (study, sports, ...) or die masturbating',NULL),(7,'if u wait until u do everything for everybody\n	instead of doing sth for somebody, u will end up doing nothing for nobody','ock.tv'),(8,'God, help me to get enough energy to stop masturbating',NULL),(9,'outer beauty is temporary, inner beauty lasts forever',NULL),(10,'loyalty',NULL),(11,'ma mort fera de moi une legende, mes actes passeront a l_histoire','from the immortals'),(12,'Unix est le système d\'exploitation d\'Internet','hack'),(13,'i must love math','math'),(14,'i believe in math, hacking is my weapon, french_world is my shit','by me');
 /*!40000 ALTER TABLE `quotes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1095,4 +1095,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-04-21  6:14:35
+-- Dump completed on 2015-04-21 15:49:53
