@@ -1,5 +1,2 @@
-# db_study
-my db
-
-this repo should be in
-/etc/mysql
+this should be in 
+/root/eclipse_workspace/
