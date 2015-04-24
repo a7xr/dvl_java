@@ -1,0 +1,15 @@
+
+import study_java.*;
+
+
+public class Main {
+	
+	public static void main(String[]args)
+	// ths is a simple test
+	{
+		Basic b = new Basic();
+		Basic.TestingFile01 a = b.new TestingFile01();
+	}
+
+	
+}
